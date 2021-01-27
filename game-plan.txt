@@ -1,3 +1,5 @@
+{GAME PLAN}
+
 Roll a single die
 Die value is added to a div to display
 If additional roll occurs, die value is added to previous die value
@@ -5,21 +7,28 @@ When player selects to 'hold' the running total from turn is added to score tota
 if player 'rolls' a 1, all points from turn are forfeited 
 When score total reaches or exceeds 100, game is over and winner is declared
 
-|Behavior                                                                   |Input      |Output
-|When an individual player rolls the die                                    |2          |2
-|When our die value >1, die value added to turn total                       |2          |2
-|When our die value =1, no value not added to turn total                    |1          |0
-|When player opts to hold, it is now the other players turn                 |Hold       |Player 2's turn
-|When player opts to "hold", turn total is added to score total             |6          |6
-|
-|
-|
-|
+
+{GRAPH}
+
+|Behavior                                                                     |Input      |Output
+|When an individual player rolls the die it returns a value between 1 and 6   |2          |2
+|When our die value >1, die value added to turn total                         |2          |2
+|When our die value =1, no value not added to turn total                      |1          |0
+|When player opts to hold, it is now the other players turn                   |Hold       |Player 2's turn
+|When player opts to "hold", turn total is added to score total               |6          |6
+|When players score is >=100, game is ended and the score totals are returned |           |
+
+Describe: rollDie()
+Test 'It should return a integer between 1 and 6'
+Code: const randomNumber = Math.floor(Math.random() * 6);
+Expect(rollDie(randomNumber)).toEqual(1 || 2 || 3 || 4 || 5 || 6)
+
+
+Describe: Player()
 
 
 
-
-
+{DIAGRAM}
 
     Player Constructor
             |
@@ -28,9 +37,9 @@ When score total reaches or exceeds 100, game is over and winner is declared
             |
         method(s)
         /        \
-  [player 1]    [player 2]
-      |             |
-      |             |
+[player 1]    [player 2]
+     |             |
+     |             |
         properties
       /            \
     Name          Name
@@ -51,4 +60,9 @@ When score total reaches or exceeds 100, game is over and winner is declared
          methods
             |
   new game (delete button)
+
+
+
+
+
 
