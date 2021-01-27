@@ -1,0 +1,54 @@
+Roll a single die
+Die value is added to a div to display
+If additional roll occurs, die value is added to previous die value
+When player selects to 'hold' the running total from turn is added to score total
+if player 'rolls' a 1, all points from turn are forfeited 
+When score total reaches or exceeds 100, game is over and winner is declared
+
+|Behavior                                                                   |Input      |Output
+|When an individual player rolls the die                                    |2          |2
+|When our die value >1, die value added to turn total                       |2          |2
+|When our die value =1, no value not added to turn total                    |1          |0
+|When player opts to hold, it is now the other players turn                 |Hold       |Player 2's turn
+|When player opts to "hold", turn total is added to score total             |6          |6
+|
+|
+|
+|
+
+
+
+
+
+
+    Player Constructor
+            |
+        name: name
+        score: score   
+            |
+        method(s)
+        /        \
+  [player 1]    [player 2]
+      |             |
+      |             |
+        properties
+      /            \
+    Name          Name
+   Score          Score
+     |              |
+   Method         Method
+     /               \
+   Roll             Roll
+   Hold             Hold
+
+
+          Winner
+            |
+         property
+            | 
+    collection of scores
+            |
+         methods
+            |
+  new game (delete button)
+

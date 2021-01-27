@@ -1,8 +1,8 @@
-# _Project Name_
+# _Pig Dice_
 
 #### _Brief Description_
 
-#### By _**Chloe Loveall and **_
+#### By _**Chloe Loveall and Alan Call**_
 
 ## Technologies Used
 
@@ -38,3 +38,5 @@ _View project on GH Pages: [gh-pages](https://chloeloveall.github.io/project-nam
 ## Contact Information
 
 _Chloe Loveall <chloeloveall@protonmail.com>_
+_Alan Call <alanmatthewcall@gmail.com>_
+
