@@ -18,16 +18,19 @@ When score total reaches or exceeds 100, game is over and winner is declared
 |When player opts to "hold", turn total is added to score total               |6          |6
 |When players score is >=100, game is ended and the score totals are returned |           |
 
+Describe: Player()
+Test: 'It will construct instances of Player'
+Code: let newPlayerInstance = new Player();
+Expect(newPlayerInstance).toEqual(Player {playerName});
+
 Describe: rollDie()
 Test 'It should return a integer between 1 and 6'
-Code: const randomNumber = Math.floor(Math.random() * 6);
+Code: Math.floor(Math.random() * 6);
 Expect(rollDie()).toEqual(1 =< x <= 6)
 
-
-Describe: Player()
-Test: 'It will create instances of Player'
-Code: let newPlayerInstance = new Player();
-Expect(newPlayerInstance).toEqual(Player {playerName, roundScore, totalScore});
+Test: 'If the return value of rollDie is NOT equal to 1, It should add the rollDie value to our turnTotal'
+Code: Player.prototype.addRound = (roundScore + rollDie)
+Expect(rollDie !== 1).toEqual(rollDie.addRound)
 
 
 
