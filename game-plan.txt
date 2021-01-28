@@ -21,7 +21,7 @@ When score total reaches or exceeds 100, game is over and winner is declared
 Describe: rollDie()
 Test 'It should return a integer between 1 and 6'
 Code: const randomNumber = Math.floor(Math.random() * 6);
-Expect(rollDie(randomNumber)).toEqual(1 || 2 || 3 || 4 || 5 || 6)
+Expect(rollDie()).toEqual(1 =< x <= 6)
 
 
 Describe: Player()
