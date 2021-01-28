@@ -31,10 +31,12 @@ Test: 'It will construct instances of Player'
 Code: let newPlayerInstance = new Player();
 Expect(newPlayerInstance).toEqual(Player {playerName});
 
-Describe: rollDie()
 Test 'It should return a integer between 1 and 6'
 Code: Math.floor(Math.random() * 6);
 Expect(rollDie()).toEqual(1 =< x <= 6)
+
+Test: 'It will add the roundScore to the totalScore'
+Expect(Player.prototype.hold).toEqual(roundScore + totalScore)
 
 
 {DIAGRAM}
