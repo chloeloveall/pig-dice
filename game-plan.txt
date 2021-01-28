@@ -25,6 +25,9 @@ Expect(rollDie()).toEqual(1 =< x <= 6)
 
 
 Describe: Player()
+Test: 'It will create instances of Player'
+Code: let newPlayerInstance = new Player();
+Expect(newPlayerInstance).toEqual(Player {playerName, roundScore, totalScore});
 
 
 
