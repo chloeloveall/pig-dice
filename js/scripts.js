@@ -1,15 +1,17 @@
-function rollDie() {
+function Player(playerName) {
+  this.playerName = playerName;
+  this.roundScore = 0;
+  this.totalScore = 0;
+}
+
+Player.prototype.rollDie = function() {
   return Math.floor(Math.random() * 6) + 1;
 };
 
-console.log(rollDie());
+Player.prototype.addRound = function() {
+  return this.roundScore += rollDie;
+};
 
-function Player(playerName, roundScore, totalScore) {
-  this.playerName = playerName;
-  this.roundScore = roundScore;
-  this.totalScore = totalScore;
-}
-
-let newPlayerInstance = new Player("Chloe", 80, 100);
+// let newPlayerInstance = new Player("Chloe", 80, 100);
 
 
