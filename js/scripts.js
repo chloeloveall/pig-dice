@@ -46,6 +46,12 @@ newGame.addPlayer(player2);
 player1.hold();
 
 // User Interface Logic 
-
-
+$(document).ready(function() {
+  $("form#pigDice").submit(function(event) {
+    event.preventDefault();
+    const inputtedPlayer1 = $("input#player1").val();
+    const inputtedPlayer2 = $("input#player2").val();
+    
+  })
+})
 
