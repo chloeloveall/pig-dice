@@ -35,7 +35,7 @@ Test 'It should return a integer between 1 and 6'
 Code: Math.floor(Math.random() * 6);
 Expect(rollDie()).toEqual(1 =< x <= 6)
 
-Test: 'It will add the roundScore to the totalScore'
+Test: 'It will add the roundScore to the totalScore when the player holds'
 Expect(Player.prototype.hold).toEqual(roundScore + totalScore)
 
 
